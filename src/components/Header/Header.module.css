@@ -1,0 +1,56 @@
+.header {
+    display: flex;
+    height: var(--header-height-pc);
+    justify-content: space-between;
+    margin: var(--margin-wrapper);
+    align-items: center;
+    border-bottom: var(--separator);
+    font-family: 'HeliosCondC';
+    color: var(--text-primary);
+    font-family: var(--font-family-Helious);
+    font-size: var(--font-size-Helious);
+    font-weight: var(--font-weight-Helious);
+}
+
+.searchWrapper {
+    position: relative;
+    border: var(--separator);
+    display: flex;
+    flex: 0.7 0;
+    height: var(--header-wrapper-height-pc);
+}
+
+
+.search {
+    padding-right: 40px;
+    padding-left: 20px;
+    width: 100%;
+}
+
+.search::placeholder {
+    color: var(--text-secondary);
+}
+
+.iconSearch {
+    position: absolute;
+    top: 32%;
+    right: 2%;
+    cursor: pointer;
+}
+
+.iconsWrapper {
+    width: 184px;
+    height: var(--header-wrapper-height-pc);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    color: white;
+    fill: green;
+}
+
+.cart {
+    fill: green;
+}

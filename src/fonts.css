@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'HeliousCondC';
+    src:local('HeliousCondC'),
+    url('fonts/Helious/HeliosCondC.woff2') format('woff2'),
+    url('fonts/Helious/HeliosCondC.woff') format('woff'),
+    url('fonts/Helious/HeliosCondC.ttf') format('ttf'),
+    url('fonts/Helious/HeliosCondC.eot') format('eot');
+}
+
+@font-face {
+    font-family: 'BebasNeueBold';
+    src:local('BebasNeueBold'),
+    url('fonts/BebasNeue/BebasNeueBold.woff') format('woff'),
+    url('fonts/BebasNeue/BebasNeueBold.ttf') format('ttf'),
+    url('fonts/BebasNeue/BebasNeueBold.eot') format('eot');
+}
+
+:root {
+    --font-family-Helious: 'HeliousCondC';
+    --font-size-Helious: 16px;
+    --font-weight-Helious: 400;
+    --line-height-Helious: 24px;
+
+    --font-family-BebasNeue: 'BebasNeueBold';
+    --font-size-BebasNeue: 24px;
+    --font-weight-BebasNeue: 700;
+    --line-height-BebasNeue: 32px;
+}

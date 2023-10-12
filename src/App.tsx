@@ -1,24 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Provider } from "react-redux";
+import React, { useState } from "react";
+
+import "fonts.css";
+import "reset-css";
+import "nullstyle.css";
+import "variable.css";
+
+
+import Header from "./components/Header/Header";
+import MainContent from "components/MainContent/MainContent";
+import Footer from "components/Footer/Footer";
+import MainLayout from "layouts/MainLayout/MainLayout";
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MainLayout Header={<Header/>} MainContent={<MainContent/>} Footer={<Footer/>}/>
     </div>
   );
 }

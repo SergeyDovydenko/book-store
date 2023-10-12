@@ -1,0 +1,10 @@
+.footer {
+    margin: 0 auto;
+    border-top: var(--separator);
+    height: var(--footer-height-pc);
+    max-width: var(--max-width);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

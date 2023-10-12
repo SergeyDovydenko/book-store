@@ -1,0 +1,16 @@
+.post {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 500px;
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid orange;
+}
+
+
+.post__button {
+    padding: 5px;
+    border: 1px solid black;
+}
