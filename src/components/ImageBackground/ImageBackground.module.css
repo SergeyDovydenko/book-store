@@ -1,0 +1,14 @@
+.booksMain {
+  text-align: center;
+  max-height: var(--image-max-height);
+}
+
+.booksDetails {
+  max-width: 544px;
+  width: 100vw;
+  height: 472px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}

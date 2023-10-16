@@ -1,5 +1,27 @@
 .icon {
-    width: 56px;
-    height: 56px;
-    
+  width: var(--icon-width);
+  height: var(--icon-height);
+}
+
+.primary {
+  background: var(--text-primary);
+  color: var(--button-text);
+}
+
+.secondary {
+  background: var(--border-color);
+  color: var(--text-primary);
+}
+
+.reverse {
+  background: var(--button-bg-reverse);
+  color: var(--button-text);
+}
+
+.standart {
+  width: 100%;
+  background: var(--text-primary);
+  color: var(--button-text);
+  padding: 15px 0 15px 0;
+  white-space: nowrap;
 }

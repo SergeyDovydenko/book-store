@@ -1,0 +1,8 @@
+.iconActive {
+  fill: red;
+  stroke: red;
+}
+
+.icon {
+  stroke: var(--main-bg-color);
+}

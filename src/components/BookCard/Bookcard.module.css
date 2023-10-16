@@ -1,0 +1,25 @@
+.card_wrapper {
+  max-width: var(--card-wrapper-max-width);
+  width: 100%;
+  height: var(--card-wrapper-height);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.book_image {
+  max-width: 100%;
+  max-height: var(--image-max-height);
+}
+
+.price_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .card_wrapper {
+    width: 90%;
+  }
+}

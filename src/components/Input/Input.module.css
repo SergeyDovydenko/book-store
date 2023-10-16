@@ -1,0 +1,18 @@
+.input {
+    color: var(--text-primary);
+    font-family: var(--font-family-Helious);
+    font-size: var(--font-size-Helious);
+    font-weight: var(--font-weight-Helious);
+}
+
+.input::placeholder {
+    color: var(--text-secondary);
+}
+
+
+.text {
+    padding-right: 45px;
+    padding-left: 20px;
+    width: 100%;
+}
+

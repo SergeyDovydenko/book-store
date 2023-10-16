@@ -1,0 +1,21 @@
+.main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  margin-top: 78px;
+}
+
+.books_wrapper {
+  display: grid;
+  gap: 48px 32px;
+  grid-template-columns: repeat(3, auto);
+  margin-top: 48px;
+  margin-bottom: 50px;
+  padding-bottom: 73px;
+  border-bottom: var(--separator);
+}
+
+@media (max-width: 768px) {
+  .books_wrapper {
+    grid-template-columns: repeat(2, auto);
+  }
+}

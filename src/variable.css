@@ -1,28 +1,40 @@
 :root {
-    --main-bg-color: white;
-    --separator-color: #E7E7E7;
-    --text-primary: #313037;
-    --text-secondary:  #A8A8A8;
+  --main-bg-color: white;
+  --separator-color: #e7e7e7;
+  --text-primary: #313037;
+  --text-secondary: #a8a8a8;
+  --button-text: #ffffff;
 
-    --max-width:1120px;
-    --margin-wrapper: 0 2% 0 2%;
-    --separator: 1px solid var(--separator-color);
-    --header-height-pc: 104px;
-    --header-wrapper-height-pc: 56px;
-    --footer-height-pc: 95px;
-    --header-search-max-width: 542px;
-    }
-  
-    body[data-theme="dark"] {
-    --main-bg-color: #313037;
-    --post-bg-color: rgba(255, 255, 255, 0.1);
-    --header-bg-color: rgba(255, 255, 255, 0.1);
-    --icon-color: rgba(255, 255, 255, 0.1);
-    --text-primary: #ffffff;
-    --text-secondary: rgba(255, 255, 255, 0.5);
-    --text-error: rgb(226, 39, 39);
-    --border-color: rgba(255, 255, 255, 0.1);
-    --input-focus-border-color: rgba(255, 255, 255, 0.7);
-    --input-error-border-color: rgba(226, 89, 39, 0.7);
-  }
-  
+  --random-bg1: #f4eefd;
+  --random-bg2: #d7e4fd;
+  --random-bg3: #fee9e2;
+  --random-bg4: #caeff0;
+
+  --theme-icon: url(components/Icon/icons/moon.svg);
+
+  --tablet-width: 800px;
+  --max-width: 1120px;
+  --margin-wrapper: 0 3% 0 3%;
+  --separator: 1px solid var(--separator-color);
+  --header-height-pc: 104px;
+  --header-wrapper-height-pc: 56px;
+  --footer-height-pc: 95px;
+  --header-search-max-width: 542px;
+
+  --icon-width: 56px;
+  --icon-height: 56px;
+
+  --card-wrapper-height: 454px;
+  --card-wrapper-max-width: 352px;
+  --image-max-height: 264px;
+}
+
+body[data-theme="dark"] {
+  --main-bg-color: #313037;
+  --text-primary: white;
+  --text-secondary: #ffffff9a;
+  --button-text: #313037;
+  --separator-color: #ffffff6b;
+  --separator: 1px solid var(--separator-color);
+  --theme-icon: url(components/Icon/icons/sun.svg);
+}

@@ -1,48 +1,65 @@
+import { usePersistedState } from "hooks/usePersistedState";
 import React, { useLayoutEffect } from "react";
-import { usePersistedState } from "hooks/usePersistedState"
 
-import styles from "components/Header/Header.module.css"
+import styles from "components/Header/Header.module.css";
 
+import Button from "components/Button/Button";
 import Icon from "components/Icon/icon";
+import Input from "components/Input/Input";
+import { NavLink } from "react-router-dom";
 
 const Header: React.FC = () => {
-    const [themeName, setThemeName] = usePersistedState<"dark" | "light">({
-        key: "theme",
-        initialValue: "light",
-      });
-    
-      const changeTheme = () => {
-        setThemeName(themeName === "light" ? "dark" : "light");
-      };
-    
-      useLayoutEffect(() => {
-        document.body.dataset.theme = themeName;
-      }, [themeName]);
-    return (
-        <div className={styles.header}>
-            <Icon type="logo"/>
-            <div className={styles.searchWrapper}>
-                <input
-                    type="text"
-                    className={styles.search}
-                    placeholder="Search"
-                />
-                <Icon type="search"/>
-            </div>
-            <div className={styles.iconsWrapper}>
-                <button className={styles.cartButton}>
-                <Icon type="cart"/>
-                </button>
-                <button className={styles.heartButton}>
-                    <Icon type="favorite"/>
-                </button>
-                <div className="theme">
-                    <input type="checkbox" name="theme" id="theme" onChange={changeTheme}/>
-                </div>
-            </div>
-        </div>
-    )
+  const [themeName, setThemeName] = usePersistedState<"dark" | "light">({
+    key: "theme",
+    initialValue: "light",
+  });
 
-}
+  const changeTheme = () => {
+    setThemeName(themeName === "light" ? "dark" : "light");
+  };
+
+  useLayoutEffect(() => {
+    document.body.dataset.theme = themeName;
+  }, [themeName]);
+  return (
+    <div className={styles.header}>
+      <NavLink to={"/"}>
+        <Button variant="iconNoSize" color="noColor">
+          <Icon type="logo" />
+        </Button>
+      </NavLink>
+      <div className={styles.searchWrapper}>
+        <Input type="text" placeholder="Search" tabIndex={1}></Input>
+        <Button
+          variant="iconNoSize"
+          color="noColor"
+          className={styles.search_button}
+        >
+          <Icon type="search" />
+        </Button>
+      </div>
+      <div className={styles.iconsWrapper}>
+        <Button variant="icon" color="noColor">
+          <Icon type="cart" />
+        </Button>
+        <NavLink to={"/favorites"}>
+          <Button variant="icon" color="noColor">
+            <Icon type="favorite" />
+          </Button>
+        </NavLink>
+        <div className={styles.theme}>
+          <input
+            type="checkbox"
+            name="theme"
+            id="theme"
+            className={styles.theme__checkbox}
+            onChange={changeTheme}
+          />
+          <span className={styles.theme__icon}></span>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default Header;

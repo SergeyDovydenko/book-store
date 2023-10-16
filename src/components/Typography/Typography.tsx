@@ -1,11 +1,11 @@
-import React from "react";
 import clsx from "clsx";
+import React from "react";
 
 import styles from "./Typography.module.css";
 
 interface TypographyProps {
   variant?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p" | "span";
-  color?: "primary" | "secondary";
+  color?: "primary" | "secondary" | "reverse";
   font?: "helious" | "bebasNeue";
   className?: string;
   centered?: boolean;
@@ -27,7 +27,7 @@ const Typography: React.FC<TypographyProps> = ({
       className={clsx(
         styles[variant],
         styles[color],
-      styles[font],
+        styles[font],
         { [styles.centered]: centered },
         className
       )}

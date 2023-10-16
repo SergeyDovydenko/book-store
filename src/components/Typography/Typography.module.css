@@ -1,51 +1,63 @@
-  .primary {
-    color: var(--text-primary);
-  }
-  
-  .secondary {
-    color: var(--text-secondary);
-  }
-  
+.primary {
+  color: var(--text-primary);
+}
 
-  .helious {
-    font-family: var(--font-family-Helious);
-  }
+.secondary {
+  color: var(--text-secondary);
+}
 
-  .bebasNeue {
-    font-family: var(--font-family-BebasNeue)
-  }
+.helious {
+  font-family: var(--font-family-Helious);
+}
 
+.bebasNeue {
+  font-family: var(--font-family-BebasNeue);
+}
 
-  .h1,
-  .h2,
-  .h3,
-  .h4 {
-    font-weight: var(--font-weight-BebasNeue);
-    font-size: var(--font-size-BebasNeue);
-    line-height: var(--line-height-BebasNeue);
-  }
-  
-  .h5,
-  .h6 {
-    font-weight: 500;
-    font-size: var(--font-size-Helious);
-    line-height: var(--line-height-Helious);
-  }
-  
-  .p {
-    font-weight: var(--font-weight-Helious);
-    font-size: var(--font-size-Helious);
-    line-height: var(--line-height-Helious);
-  }
-  
-  .span {
-    font-family: var(--font-family-Helious);
-    font-weight: 200;
-    font-size: var(--font-size-Helious);
-    line-height: var(--line-height-Helious);
-  }
-  
-  .centered {
-    text-align: center;
-  }
-  
+.h1 {
+  font-family: var(--font-family-BebasNeue);
+  font-weight: var(--font-weight-BebasNeue);
+  font-size: var(--font-size-BebasNeueH1);
+  line-height: var(--line-height-BebasNeueH1);
+}
+
+.h2 {
+  font-family: var(--font-family-BebasNeue);
+  font-weight: var(--font-weight-BebasNeue);
+  font-size: var(--font-size-BebasNeueH2);
+  line-height: var(--line-height-BebasNeueH2);
+}
+.h3,
+.h4 {
+  font-weight: var(--font-weight-BebasNeue);
+  font-size: var(--font-size-BebasNeue);
+  line-height: var(--line-height-BebasNeue);
+}
+
+.h5,
+.h6 {
+  font-weight: 500;
+  font-size: var(--font-size-Helious);
+  line-height: var(--line-height-Helious);
+}
+
+.p {
+  font-weight: var(--font-weight-Helious);
+  font-size: var(--font-size-Helious);
+  line-height: var(--line-height-Helious);
+}
+
+.span {
+  font-family: var(--font-family-Helious);
+  font-weight: 200;
+  font-size: var(--font-size-Helious);
+  line-height: var(--line-height-Helious);
+}
+
+.centered {
+  text-align: center;
+}
+
+.reverse {
+  color: var(--main-bg-color);
+}
