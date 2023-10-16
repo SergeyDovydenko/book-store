@@ -95,6 +95,18 @@ const BookDetails: React.FC = () => {
           </Button>
         </div>
       </div>
+      <div className={styles.description_wrapper}>
+        <Typography
+          variant="p"
+          color="primary"
+          className={styles.description_title}
+        >
+          Description
+        </Typography>
+        <Typography variant="p" color="primary">
+          {book?.subtitle}
+        </Typography>
+      </div>
     </div>
   );
 };

@@ -5,6 +5,7 @@ import "nullstyle.css";
 import "reset-css";
 import "variable.css";
 
+import { LocalStorage } from "components/LocalStorage/LocalStorage";
 import Router from "router/router";
 import store from "store";
 
@@ -13,6 +14,7 @@ function App() {
     <div className="App">
       <Provider store={store}>
         <Router />
+        <LocalStorage />
       </Provider>
     </div>
   );

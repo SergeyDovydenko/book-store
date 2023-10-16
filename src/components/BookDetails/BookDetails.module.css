@@ -1,6 +1,6 @@
 .main {
   max-width: var(--max-width);
-  margin: 0 auto;
+  margin: 20px auto 100px auto;
 }
 
 .button_arrow {
@@ -67,6 +67,18 @@
 
 .button_cart {
   margin-top: 77px;
+}
+
+.description_wrapper {
+  margin-top: 72px;
+}
+
+.description_title {
+  padding-bottom: 24px;
+  margin-bottom: 50px;
+  border-bottom: var(--separator);
+  width: 161px;
+  text-align: center;
 }
 
 @media (max-width: 1024px) {

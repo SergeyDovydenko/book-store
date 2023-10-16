@@ -1,0 +1,13 @@
+.empty_title {
+  height: calc(100vh - (var(--footer-height-pc) + var(--header-height-pc)));
+  margin-top: 72px;
+}
+.wrapper {
+  margin: 0 auto 70px auto;
+  max-width: var(--max-width);
+}
+
+.backButton {
+  margin-bottom: 10px;
+  margin-top: 30px;
+}

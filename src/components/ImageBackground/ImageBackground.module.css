@@ -12,3 +12,9 @@
   justify-content: center;
   position: relative;
 }
+
+.favorite {
+  max-width: 256px;
+  width: 100vw;
+  height: 192px;
+}

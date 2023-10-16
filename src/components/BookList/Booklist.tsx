@@ -7,13 +7,14 @@ import styles from "./Booklist.module.css";
 
 interface BookListProps {
   books: Book[];
+  title: string;
 }
 
-export const BookList: React.FC<BookListProps> = ({ books }) => {
+export const BookList: React.FC<BookListProps> = ({ books, title }) => {
   return (
     <div className={styles.main}>
       <Typography variant="h1" color="primary">
-        NEW RELEASED BOOKS
+        {title}
       </Typography>
       <div className={styles.books_wrapper}>
         {books.map((book) => (
@@ -21,7 +22,7 @@ export const BookList: React.FC<BookListProps> = ({ books }) => {
             style={{ textDecoration: "none" }}
             to={`/books/${book.isbn13}`}
           >
-            <Bookcard book={book} />
+            <Bookcard book={book} key={book.isbn13} />
           </NavLink>
         ))}
       </div>

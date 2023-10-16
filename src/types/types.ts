@@ -23,3 +23,7 @@ export interface BookDetail {
   image: string;
   url: string;
 }
+
+export interface BookCardProps {
+  book: Book;
+}

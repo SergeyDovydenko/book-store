@@ -1,12 +1,8 @@
 import Typography from "components/Typography/Typography";
-import { Book } from "types/types";
+import { BookCardProps } from "types/types";
 
 import ImageBackground from "components/ImageBackground/ImageBackground";
 import styles from "./Bookcard.module.css";
-
-interface BookCardProps {
-  book: Book;
-}
 
 export const Bookcard: React.FC<BookCardProps> = ({ book }) => {
   return (

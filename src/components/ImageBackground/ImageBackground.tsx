@@ -3,7 +3,7 @@ import styles from "./ImageBackground.module.css";
 
 interface ImageBackgroundProps {
   children?: React.ReactNode;
-  variant?: "booksMain" | "booksDetails";
+  variant?: "booksMain" | "booksDetails" | "favorite";
 }
 
 const ImageBackground: React.FC<ImageBackgroundProps> = ({

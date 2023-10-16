@@ -5,6 +5,13 @@ export interface GetNewBooksResponce {
   total: string;
   books: Book[];
 }
+
+export interface GetBooksByQueryResponce {
+  total: string;
+  page: string;
+  books: Book[];
+}
+
 export interface GetBookResponce extends BookDetail {}
 
 export const getNewBooks = async (): Promise<GetNewBooksResponce> => {
@@ -13,4 +20,11 @@ export const getNewBooks = async (): Promise<GetNewBooksResponce> => {
 
 export const getBook = async (id: Book["isbn13"]): Promise<GetBookResponce> => {
   return (await client.get(`/books/${id}`)).data;
+};
+
+export const getBooksByQuery = async (
+  query: string,
+  currentPage: number
+): Promise<GetBooksByQueryResponce> => {
+  return (await client.get(`/search/${query}?page=${currentPage}`)).data;
 };

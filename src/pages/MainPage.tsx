@@ -6,7 +6,7 @@ import MainLayout from "layouts/MainLayout/MainLayout";
 export const MainPage = () => {
   return (
     <MainLayout
-      Header={<Header />}
+      Header={<Header disableSearch={false} />}
       MainContent={<MainContent />}
       Footer={<Footer />}
     ></MainLayout>
